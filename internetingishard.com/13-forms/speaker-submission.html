@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Speaker submission</title>
+  </head>
+
+  <body>
+    <header class="speaker-form-header">
+      <h1>Speaker submission</h1>
+
+      <p><em>Want to speak at out fake conference? Fill out this form.</em></p>
+    </header>
+
+    <form action="" method="get" class="speaker-form">
+      <div class="form-row">
+        <label for="full-name">Name</label>
+        <input type="text" name="full-name" id="full-name" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="joe@example.com" />
+      </div>
+
+      <fieldset class="legacy-form-row">
+          <legend>Type of talk</legend>
+
+          <input type="radio" name="talk-type" id="talk-type-1" value="main-stage" />
+          <label for="talk-type-1" class="radio-label">Main stage</label>
+
+          <input type="radio" name="talk-type" id="talk-type-2" value="workshop" checked />
+          <label for="talk-type-2" class="radio-label">Workshop</label>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="t-shirt">T-shirt size</label>
+          <select name="t-shirt" id="t-shirt">
+            <option value="xs">Extra small</option>
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="abstract">Abstract</label>
+          <textarea class="instructions" name="abstract" id="abstract">Describe you talk in 500 words of less</textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="available" class="checkbox-label">
+            <input type="checkbox" name="available" id="available" />
+            <span>I'm actually available the date of the talk</span>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <button>Submit</button>
+        </div>
+      </form>
+  </body>
+</html>
